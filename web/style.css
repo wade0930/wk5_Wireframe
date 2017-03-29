@@ -36,7 +36,7 @@ header {
 }
 
 header .box {
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, .35);
     overflow: auto;
     height: 400px;
 }
@@ -45,9 +45,10 @@ header .box {
     margin-top: 30px;
 }
 
-img.apple {
+a img.apple {
     width: 25px;
     margin-left: 70px;
+    display: inline-block;
 }
 
 .nav ul {
@@ -59,14 +60,33 @@ img.apple {
 
 .nav li {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 5px;
+    /*nav裏各li間距*/
     vertical-align: middle;
 }
 
-.nav a {
-    color: #1A1A1A;
+.nav li a {
+    overflow: auto;
+    color: rgba(26, 26, 26, .8);
     font-size: 18px;
+    display: inline-block;
+    transition: all .3s;
+    border-bottom: solid 1px rgba(26, 26, 26, 0);
+    padding: 5px 10px;
 }
+
+.nav li a:hover {
+    border-bottom: solid 1px rgba(26, 26, 26, .8);
+}
+
+
+/*  另一種HOVER樣式 
+.nav li a:hover { 
+    color: white;
+    background-color: rgba(26, 26, 26, .8);
+    padding: 5px 10px;
+}
+*/
 
 .nav li img {
     width: 25px;
@@ -105,14 +125,23 @@ section {
     justify-content: center;
     cursor: pointer;
     transition: all .5s;
+    border-bottom: 1px solid white;
+}
+
+.product_block:hover .img_area {
+    width: 50%;
 }
 
 .product_block:hover {
-    transform: scale(1.1);
+    background-color: #2A2A2A;
 }
 
 .product_block.mid {
-    background-color: #2A2A2A;
+    -background-color: #2A2A2A;
+}
+
+.product_block.btm {
+    border-bottom: 0px solid white;
 }
 
 .product_block .img_area {
@@ -123,6 +152,8 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .5s;
+    position: relative;
 }
 
 .product_block img {
@@ -174,12 +205,12 @@ section {
     margin: 0px;
     height: 100%;
     padding: 120px;
-    background-color: rgba(26, 26, 26, .2);
+    background-color: rgba(26, 26, 26, .3);
     transition: all .5s;
 }
 
 .info_block .content:hover {
-    background-color: rgba(26, 26, 26, .5);
+    background-color: rgba(26, 26, 26, .6);
 }
 
 .info_block .content .box {
@@ -206,11 +237,7 @@ section {
 }
 
 .info_block .content a:hover {
-    display: inline-block;
-    margin-top: 70px;
-    padding: 5px 20px;
-    background-color: rgba(26, 26, 26, .8);
-    transform: scale(1.2);
+    background-color: rgba(26, 26, 26, 1);
 }
 
 footer {
