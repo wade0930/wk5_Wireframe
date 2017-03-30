@@ -97,6 +97,7 @@ header h2 {
     clear: both;
     margin: auto;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 header h1 {
@@ -126,6 +127,7 @@ section {
     cursor: pointer;
     transition: all .5s;
     border-bottom: 1px solid white;
+    letter-spacing: 3px;
 }
 
 .product_block:hover .img_area {
@@ -207,6 +209,7 @@ section {
     padding: 120px;
     background-color: rgba(26, 26, 26, .3);
     transition: all .5s;
+        letter-spacing: 3px;
 }
 
 .info_block .content:hover {
@@ -252,7 +255,8 @@ footer {
 
 footer p {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+        letter-spacing: 3px;
 }
 
 @media only screen and (max-width: 1280px) {
