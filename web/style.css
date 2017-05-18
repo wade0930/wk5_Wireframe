@@ -327,7 +327,6 @@ footer p {
         border-bottom: solid 1px rgba(26, 26, 26, 0);
         padding: 7px 10px;
     }
-    
     .nav li a:hover {
         border-bottom: 1px solid rgba(26, 26, 26, 0);
     }
@@ -357,13 +356,10 @@ footer p {
     .info_block {
         height: 400px;
         width: 100%;
-        
     }
-    
     .info_block .content {
         padding: 10px 0;
     }
-
     .info_block .content .box {
         height: 40px;
     }
@@ -374,6 +370,10 @@ footer p {
 }
 
 @media only screen and (max-width: 320px) {
+    header {
+        height: 400px;
+        width: 100%;
+    }
     section {
         margin: 0 0px;
         max-width: 1280px;
@@ -458,12 +458,10 @@ footer p {
     .info_block {
         height: 300px;
         width: 100%;
-        
     }
     .info_block .content {
         padding: 10px 0;
     }
-
     .info_block .content .box {
         height: 40px;
     }
